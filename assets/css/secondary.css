@@ -258,6 +258,8 @@ ul.alt li {
         padding: 4em 4em 2em 4em;
         background-color: #ffffff;
         border-radius: 4px;
+        margin-right: 15%;
+        margin-left: 15%;
     }
 
     #main > header:first-child {
@@ -341,7 +343,7 @@ table {
 
 body {
     background-color: #f4f4f4;
-    color: #666666;
+    color: #000000;
 }
 
 body, input, select, textarea {
@@ -517,7 +519,7 @@ hr {
 }
 
 input, select, textarea {
-    color: #444444;
+    color: #000000;
 }
 
 a {
@@ -525,15 +527,15 @@ a {
 }
 
     a:hover {
-        color: #EF6480 !important;
+        color: #000000 !important;
     }
 
 strong, b {
-    color: #444444;
+    color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #444444;
+    color: #000000;
 }
 
 blockquote {
