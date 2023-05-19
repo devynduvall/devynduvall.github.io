@@ -75,7 +75,7 @@
                 Once the application is up and running on a hosted EC2 instance, I'll upgrade the normalization factor ofthe SQL data structure. The diagram below is an example of normalization within the database structure.
             </p>
 
-            <img src="images/restaurant_diagram.png">
+            <img src="images/restaurant_diagram.png" width = "100%">
 
             <p>
                 To achieve 3NF, I eliminated dependencies on primary keys and built out more lookup tables. I made several design changes, including creating a Rental_Owner_Type entity to specialize the overall entity relationship and specializing Rental_Owner_Type into its entity to create coherency and normalize this section of the ERD. I also made a Restaurant_Cuisine entity to specialize the entity relationship, allowing for categorical data that can be used in a recommender system to improve future feature enhancements to the web application.
