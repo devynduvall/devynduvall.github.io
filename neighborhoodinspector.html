@@ -6,18 +6,11 @@
 		<link rel="stylesheet" href="assets/css/secondary.css" />
         <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-2i1yFv1l4DdKj6PUnlCOUVdZvP8XjcNvyndie1jK6zIlGvH8FaC1ngumO5h5Kdz/TtZvy9tjKzixtrgOrfBkGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="assets/js/template.js" type="text/javascript" defer></script>
 
     </head>
 	<body>
-        <header>
-            <nav>
-                <ul>
-                    <a href="index.html">Home</a>
-                    <a href="assets/resume.pdf">Resume</a>
-                    <a href="nature.html">Nature</a>
-                </ul>
-              </nav>
-        </header>
+        <header-component></header-component>
 
         <section id="main" class="main">
             <header>
@@ -99,13 +92,13 @@
                 In the video demonstration of the web application, you can see how the Flask Web Server functioned and my decisions when creating the routes. The website loads data from the MySQL database and sends it to the Leaflet.js script, which initializes the markers on the map. When users select a rental property, a fetch request is sent to the backend, which queries the Restaurants table and sends the data to the front end as a GeoJSON file. This approach speeds up the querying process and allows for various markers on the map. 
             </p>
 
-            <img src="images/code1.png">
+            <img src="images/code1.png" width="100%">
             
             <p>
                 When you select a rental, the system sends a request to fetch the Rental_ID from the backend, which is then queried against the Restaurants table. Once the data has been retrieved from the database, it is converted into a GeoJSON file format and sent to the front end. We chose to use a GeoJSON file because it allows us to create multiple markers on the Leaflet map with just one call. This helps to speed up the querying process and ensures that every restaurant subset can be easily swapped out for other rental property selections on the map. Please see the example code below for more information. 
             </p>
 
-            <img src="images/code2.png">
+            <img src="images/code2.png" width="100%">
             
             <p>
                 I found that understanding how the Flask framework interacted with the database was crucial in the development process. It was the area where I found the most interest, as interacting with the database directly was essential to increasing query performance. This meant that I didn't need to transform all the information to APIs to be ingested by a static webpage.
